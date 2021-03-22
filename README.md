@@ -1,3 +1,3 @@
-# ImpressiveSQLScripts
+# Impressive SQL Scripts
 
-These are scripts I've written that are long and complicated. I'm being a show-off and putting them here to impress people. 
+These are SQL scripts I've written that give an idea of the depth of my knowledge in SQL.
