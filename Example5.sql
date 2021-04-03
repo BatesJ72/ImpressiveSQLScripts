@@ -1,3 +1,5 @@
+--Part C
+
 --Drop existing tables and import new data into SQL
 	
 		--drop table CE_PartC_Data  --[dbo].[CE_PartC_Data] --VOE results

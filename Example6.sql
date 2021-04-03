@@ -1,3 +1,6 @@
+--subquery with complex case statments
+
+
 select	sub.*, (MostRecent_LienAmount-MostRecent_AuditedAmount) as LienAmount_AuditedAmount_Delta,
 		Case
                     When stage like 'final%' or stage like 'closed' then 'Lien is final'

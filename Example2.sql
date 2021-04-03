@@ -1,4 +1,6 @@
---20. Double No Claimants 
+--Double Nos
+
+-- Double No Claimants 
 
 				  -- Run A: Create Table 1: Cases with Double No Scope
 					  select distinct Name 

@@ -1,7 +1,6 @@
 --1. Update JB_HBReport_AddClientData and JB_HBReport_AddLienData to have appropriate CaseId
 
 
-
 --2. Import data into SQL: 
 drop table JB_GHB_Case_Current
 drop table JB_GHB_Obligation_Current

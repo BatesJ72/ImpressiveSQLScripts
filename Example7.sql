@@ -16,7 +16,6 @@
 		
 						drop table Questionnaire_BSC
 
-
 				select distinct F.Casename, Q.* 
 				into Questionnaire_BSC
 				from Questionnaire_BSC_prelim as Q
