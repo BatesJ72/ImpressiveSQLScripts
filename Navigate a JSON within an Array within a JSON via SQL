@@ -1,0 +1,16 @@
+select *
+from (
+select 
+JSON_VALUE(PSF_T_RST, '$.backbridge.headr.sourceSystem') AS SOURCE_SYSTEM,  
+JSON_VALUE(PSF_T_RST, '$.backbridge.headr.eventDate') AS EVENT_DATE, 
+JSON_VALUE(PSF_T_RST, '$.backbridge.headr.sourceTopic') AS SOURCE_TOPIC, 
+JSON_VALUE(PSF_T_RST, '$.backbridge.peoplsftExtract[0].projectId') AS PROJECT_ID, 
+JSON_VALUE(PSF_T_RST, '$.backbridge.peoplsftExtract[0].projectDescrip') AS PROJECT_DESC,
+JSON_VALUE(PSF_T_RST, '$.backbridge.peoplsftExtract[0].businessUnit') AS BUSINESS_UNIT
+
+ 
+
+from PSFT_TRXN
+)
+where 
+PROJECT_ID = 123456
