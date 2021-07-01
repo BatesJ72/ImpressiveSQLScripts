@@ -1,0 +1,10 @@
+select jt.*
+from PN,
+JSON_TABLE(PN_R, '$.barige.pesoExt[*]'
+COLUMNS (row_number FOR ORDINALITY, 
+        urceat VARCHAR2(10) PATH '$.urceat',
+        otct VARCHAR2(10) PATH '$.otct')) 
+as jt
+
+where 
+NBR = 3901087452
