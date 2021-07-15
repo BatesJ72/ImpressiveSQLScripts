@@ -1,0 +1,21 @@
+select *
+
+from (
+select distinct
+        PHVR.sdf as "PROJECT ID",
+        PHVR.dfs as "CSJ", 
+        PHVR.xcvxc as "CCSJ",
+        PHVR.xcvsd as "PROJECT DISTRICT",
+        PBPF.cvbc as "Sidewalk",
+        PBPF.ljk as "Shared Use Path",
+        PBPF.oup as "Shoulder",
+        PBPF.ewer as "Separated Bike Lane",
+        PBPF.jhef as "Buffered Lane",
+        PBPF.nkih as "Bike Lane",
+        PBPF.tthmg as "Other"
+from 
+jyudf PHVR
+LEFT OUTER JOIN ftjer PBPF on PBPF.PROJ_SYSID = PHVR.PROJ_SYSID
+) 
+
+unpivot (Checked_T_F for Facility in ("Sidewalk", "Shared Use Path", "Shoulder", "Separated Bike Lane", "Buffered Lane", "Bike Lane", "Other")) 
